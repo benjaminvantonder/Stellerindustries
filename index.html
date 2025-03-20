@@ -21,19 +21,22 @@
     <!--Navbar-->
 
     <div class="pos-f-t">
-      <!--Navbar toggle button-->
+      <!--Navbar section that is openable-->
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h4 class="text-white">Collapsed content</h4>
+        <div class="bg-light p-4">
+          <h4 class="text-black">Collapsed content</h4>
           <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
       </div>
-      <!--Other navbar things-->
-      <nav class="navbar navbar-dark bg-dark">
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-light bg-light">
+        <!-- Logo / Brand -->
         <a class="navbar-brand" href="#">Steller Industries</a>
-        <!--This is just plain text on a navbar-->
+
+        <!-- Mobile Toggler Button -->
         <button
-          class="navbar-toggler ml-auto"
+          class="navbar-toggler d-block d-md-none ml-auto"
           type="button"
           data-toggle="collapse"
           data-target="#navbarToggleExternalContent"
@@ -43,8 +46,30 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Desktop Nav Links (Always Visible on md and up) -->
+        <div class="d-none d-md-flex">
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item active mx-2">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
+
+    <!--Navbar END-->
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
