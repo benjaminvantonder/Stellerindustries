@@ -57,14 +57,14 @@
   text-align: center;
   background-color: #343a40;
   color: rgb(232, 232, 232);
-  padding: 1em;
+  padding: 1.3em;
 }
 
 .white-background {
   text-align: center;
   background-color: rgb(240, 240, 240);
   color: rgb(21, 21, 21);
-  padding: 1em;
+  padding: 1.3em;
 }
 
 .white-text-colour a {
