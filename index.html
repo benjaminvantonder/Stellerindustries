@@ -25,12 +25,16 @@
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
+            <a class="nav-item nav-link text-white">Home</a>
+            <a class="nav-item nav-link text-white" onclick="goToPageServices()"
+              >Services</a
             >
-            <a class="nav-item nav-link" href="#">Services</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
-            <a class="nav-item nav-link" href="#">About us</a>
+            <a class="nav-item nav-link text-white" onclick="goToPageContact()"
+              >Contact</a
+            >
+            <a class="nav-item nav-link text-white" onclick="goToPageAboutUs()"
+              >About us</a
+            >
           </div>
         </div>
       </div>
@@ -57,18 +61,24 @@
         <div class="d-none d-md-flex">
           <ul class="navbar-nav flex-row">
             <li class="nav-item active mx-2">
-              <a class="nav-link" href="#"
+              <a class="nav-link cursor-pointer" href="#"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link cursor-pointer" onclick="goToPageServices()"
+                >Services</a
+              >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link cursor-pointer" onclick="goToPageContact()"
+                >Contact</a
+              >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
+                >About us</a
+              >
             </li>
           </ul>
         </div>
@@ -116,9 +126,17 @@
 
     <!--Bottom bar is for contact info, will also be a darker colour +27 72 152 4091-->
     <div class="bottom-bar container-fluid black-background">
-      <h5>Contact us:</h5>
-      <p>+27 72 152 4091</p>
-      <p>E-mail: email@email.com</p>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>OFFICE HOURS:</h5>
+          <p>Mon - Fri: 08h00 - 17h00</p>
+        </div>
+        <div class="col-md-6">
+          <h5>CONTACT US:</h5>
+          <p>+27 72 152 4091</p>
+          <p>E-mail: email@email.com</p>
+        </div>
+      </div>
     </div>
 
     <script

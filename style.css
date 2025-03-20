@@ -3,6 +3,10 @@
   padding-bottom: 1.3rem;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .home-page-image {
   position: relative;
 }
@@ -32,10 +36,10 @@
 .image-text {
   position: absolute;
   left: 50%;
-  top: 10%;
+  top: 50%; /* Center vertically */
   color: #343a40;
   text-align: center;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
   z-index: 3; /* Higher than the overlay */
 }
 
@@ -51,7 +55,7 @@
 
 .black-background {
   text-align: center;
-  background-color: rgb(37, 37, 37);
+  background-color: #343a40;
   color: rgb(232, 232, 232);
   padding: 1em;
 }
@@ -61,6 +65,10 @@
   background-color: rgb(240, 240, 240);
   color: rgb(21, 21, 21);
   padding: 1em;
+}
+
+.white-text-colour a {
+  color: white;
 }
 
 .white-background h4 {
