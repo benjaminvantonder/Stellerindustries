@@ -23,14 +23,20 @@
     <div class="pos-f-t">
       <!--Navbar section that is openable-->
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-light p-4">
-          <h4 class="text-black">Collapsed content</h4>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+        <div class="bg-dark p-4">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="#">Services</a>
+            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link" href="#">About us</a>
+          </div>
         </div>
       </div>
 
       <!-- Navbar -->
-      <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-dark bg-dark thick-navbar">
         <!-- Logo / Brand -->
         <a class="navbar-brand" href="#">Steller Industries</a>
 
@@ -56,13 +62,13 @@
               >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Services</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link" href="#">About us</a>
             </li>
           </ul>
         </div>
@@ -70,6 +76,50 @@
     </div>
 
     <!--Navbar END-->
+    <div class="home-page-image">
+      <img src="assets\dj-image-home.jpg" />
+      <div class="image-text">
+        <h4>Steller Industries</h4>
+        <p>Lorem | ipsum | dolor | sit | amet</p>
+      </div>
+    </div>
+
+    <div class="container-fluid black-background">
+      <h4>Lorem ipsum dolor sit amet</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci
+        tellus, posuere sit amet nulla eget, lacinia porta ex. Ut aliquam odio
+        dapibus magna pharetra, a placerat massa finibus. Morbi sit amet eros
+        efficitur, dictum enim sit amet, accumsan erat. Ut tortor neque,
+        efficitur id eros eget, dapibus accumsan nunc. Nullam maximus leo id
+        accumsan iaculis. Sed egestas tellus nec molestie eleifend. Duis porta
+        pharetra consectetur. Donec pellentesque nisi dui, vitae fringilla erat
+        sagittis et. Nunc laoreet justo sit amet ex ullamcorper, ac volutpat
+        arcu venenatis.
+      </p>
+    </div>
+
+    <div class="container-fluid white-background">
+      <h5>Overview</h5>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci
+        tellus, posuere sit amet nulla eget, lacinia porta ex. Ut aliquam odio
+        dapibus magna pharetra, a placerat massa finibus. Morbi sit amet eros
+        efficitur, dictum enim sit amet, accumsan erat. Ut tortor neque,
+        efficitur id eros eget, dapibus accumsan nunc. Nullam maximus leo id
+        accumsan iaculis. Sed egestas tellus nec molestie eleifend. Duis porta
+        pharetra consectetur. Donec pellentesque nisi dui, vitae fringilla erat
+        sagittis et. Nunc laoreet justo sit amet ex ullamcorper, ac volutpat
+        arcu venenatis.
+      </p>
+    </div>
+
+    <!--Bottom bar is for contact info, will also be a darker colour +27 72 152 4091-->
+    <div class="bottom-bar container-fluid black-background">
+      <h5>Contact us:</h5>
+      <p>+27 72 152 4091</p>
+      <p>E-mail: email@email.com</p>
+    </div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -86,5 +136,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
