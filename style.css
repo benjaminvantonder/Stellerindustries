@@ -62,6 +62,26 @@
   padding: 0;
 }
 
+.image-text-desktop {
+  position: absolute;
+  left: 50%;
+  top: 50%; /* Center vertically */
+  color: #343a40;
+  text-align: center;
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  z-index: 3; /* Higher than the overlay */
+}
+
+.image-text-desktop h3 {
+  font-weight: bold;
+}
+
+.image-text-desktop p {
+  font-size: 1.7em;
+  margin: 0;
+  padding: 0;
+}
+
 .black-background {
   text-align: center;
   background-color: #343a40;
