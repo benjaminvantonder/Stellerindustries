@@ -3,6 +3,15 @@
   padding-bottom: 1.3rem;
 }
 
+.brand-logo {
+  position: absolute;
+  height: 80px; /* Adjust as needed */
+  width: auto;
+  left: 0; /* Align it as per your design */
+  top: 50%;
+  transform: translateY(-50%); /* Centers vertically */
+}
+
 .cursor-pointer {
   cursor: pointer;
 }

@@ -7,6 +7,15 @@
   cursor: pointer;
 }
 
+.brand-logo {
+  position: absolute;
+  height: 80px; /* Adjust as needed */
+  width: auto;
+  left: 0; /* Align it as per your design */
+  top: 50%;
+  transform: translateY(-50%); /* Centers vertically */
+}
+
 .home-page-image {
   position: relative;
 }
@@ -57,14 +66,12 @@
   text-align: center;
   background-color: #343a40;
   color: rgb(232, 232, 232);
-  padding: 1.3em;
 }
 
 .white-background {
   text-align: center;
   background-color: rgb(240, 240, 240);
   color: rgb(21, 21, 21);
-  padding: 1.3em;
 }
 
 .white-text-colour a {

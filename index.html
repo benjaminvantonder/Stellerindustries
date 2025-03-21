@@ -23,16 +23,16 @@
     <div class="pos-f-t">
       <!--Navbar section that is openable-->
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
+        <div class="bg-light p-4">
           <div class="navbar-nav">
-            <a class="nav-item nav-link text-white">Home</a>
-            <a class="nav-item nav-link text-white" onclick="goToPageServices()"
+            <a class="nav-item nav-link text-black">Home</a>
+            <a class="nav-item nav-link text-black" onclick="goToPageServices()"
               >Services</a
             >
-            <a class="nav-item nav-link text-white" onclick="goToPageContact()"
+            <a class="nav-item nav-link text-black" onclick="goToPageContact()"
               >Contact</a
             >
-            <a class="nav-item nav-link text-white" onclick="goToPageAboutUs()"
+            <a class="nav-item nav-link text-black" onclick="goToPageAboutUs()"
               >About us</a
             >
           </div>
@@ -40,9 +40,14 @@
       </div>
 
       <!-- Navbar -->
-      <nav class="navbar navbar-dark bg-dark thick-navbar">
+      <nav class="navbar navbar-light bg-light thick-navbar">
         <!-- Logo / Brand -->
-        <a class="navbar-brand" href="#">Steller Industries</a>
+        <a class="navbar-brand position-relative" href="#">
+          <img
+            src="../assets/steller-industries-logo.jpg"
+            class="brand-logo"
+            alt="Steller Industries"
+        /></a>
 
         <!-- Mobile Toggler Button -->
         <button
@@ -86,7 +91,18 @@
     </div>
 
     <!--Navbar END-->
-    <div class="home-page-image">
+
+    <!--MOBILE ONLY: d-block d-md-none ml-auto-->
+    <!--DESKTOP ONLY: d-none d-md-flex-->
+    <div class="home-page-image d-none d-md-flex">
+      <img src="assets\dj-image-home2.jpg" />
+      <div class="image-text">
+        <h4>Steller Industries</h4>
+        <p>Lorem | ipsum | dolor | sit | amet</p>
+      </div>
+    </div>
+
+    <div class="home-page-image d-block d-md-none ml-auto">
       <img src="assets\dj-image-home.jpg" />
       <div class="image-text">
         <h4>Steller Industries</h4>
@@ -94,7 +110,7 @@
       </div>
     </div>
 
-    <div class="container-fluid black-background">
+    <div class="container-fluid black-background py-5">
       <h3>Lorem ipsum dolor sit amet</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci
@@ -109,7 +125,7 @@
       </p>
     </div>
 
-    <div class="container-fluid white-background">
+    <div class="container-fluid white-background py-5">
       <h3>Overview</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci
