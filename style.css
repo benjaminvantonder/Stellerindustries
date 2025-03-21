@@ -69,7 +69,7 @@
   color: #343a40;
   text-align: center;
   transform: translate(-50%, -50%); /* Center horizontally and vertically */
-  z-index: 3; /* Higher than the overlay */
+  z-index: 4; /* Higher than the overlay */
 }
 
 .image-text-desktop h3 {
