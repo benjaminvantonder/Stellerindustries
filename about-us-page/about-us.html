@@ -27,9 +27,18 @@
         <div class="bg-light p-4">
           <div class="navbar-nav">
             <a class="nav-item nav-link text-black">Home</a>
-            <a class="nav-item nav-link text-black">Services </a>
-            <a class="nav-item nav-link text-black">Contact</a>
-            <a class="nav-item nav-link text-black">About us</a>
+            <a class="nav-item nav-link text-black" onclick="goToPageAboutUs()"
+              >About Us</a
+            >
+            <a class="nav-item nav-link text-black" onclick="goToPageServices()"
+              >Services</a
+            >
+            <a class="nav-item nav-link text-black">Portfolio</a>
+            <a class="nav-item nav-link text-black">Testimonials</a>
+            <a class="nav-item nav-link text-black">Blog</a>
+            <a class="nav-item nav-link text-black" onclick="goToPageContact()"
+              >Contact Us</a
+            >
           </div>
         </div>
       </div>
@@ -60,21 +69,67 @@
         <!-- Desktop Nav Links (Always Visible on md and up) -->
         <div class="d-none d-md-flex">
           <ul class="navbar-nav flex-row">
-            <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer" href="#">Home </a>
+            <li class="nav-item active mx-2">
+              <a class="nav-link cursor-pointer" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer" href="#">Services</a>
+              <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
+                >About Us</a
+              >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer" href="#">Contact</a>
+              <a class="nav-link cursor-pointer" onclick="goToPageServices()"
+                >Services</a
+              >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer active" href="#">About us</a>
+              <a class="nav-link cursor-pointer">Portfolio</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer">Testimonials</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageContact()"
+                >Contact Us</a
+              >
             </li>
           </ul>
         </div>
       </nav>
+    </div>
+
+    <div class="container-fluid black-background py-5">
+      <h2>So Why Steller and Not Stellar?</h2>
+      <p>
+        At Steller Industries, our name is more than just a word—it’s a
+        reflection of who we are and what we do. We chose "Steller" because it
+        sounds like "stellar," representing excellence, but with a unique twist.
+        The "elle" in the middle is a deliberate design choice, symbolizing both
+        aspects of our business: sound (since it sounds like "stellar") and
+        visual creativity (as the spelling is more visually distinctive, just
+        like our photography and videography work). It’s a name that embodies
+        our commitment to delivering top-tier sound, lighting, and visual
+        experiences—because in everything we do, we aim to be truly Steller!
+      </p>
+      <p>
+        Steller Industries, formerly known as Flashpoint Productions, was
+        rebranded in early 2024 but has been operating since 2014. We specialize
+        in providing high-quality sound and lighting services for a wide range
+        of events. Over the years, we have expanded our services to include
+        photography and videography, ensuring a complete event production
+        experience for our clients.
+      </p>
+      <p>
+        Our vision is to become a leading service provider in the event
+        production industry while growing into new avenues such as CCTV
+        installations, security video systems, sound and lighting installations,
+        computer building, and network solutions.
+      </p>
     </div>
 
     <script
