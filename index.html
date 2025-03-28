@@ -7,7 +7,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
-      <meta name="description" content="Steller industries">
+      <meta name="description" content="Steller industries" />
       <title>Steller Industries</title>
       <link
         rel="stylesheet"
@@ -32,18 +32,32 @@
         <div class="bg-light p-4">
           <div class="navbar-nav">
             <a class="nav-item nav-link text-black">Home</a>
+            <a class="nav-item nav-link text-black" onclick="goToPageAboutUs()"
+              >About Us</a
+            >
             <a class="nav-item nav-link text-black" onclick="goToPageServices()"
               >Services</a
             >
+            <a class="nav-item nav-link text-black">Portfolio</a>
+            <a class="nav-item nav-link text-black">Testimonials</a>
+            <a class="nav-item nav-link text-black">Blog</a>
             <a class="nav-item nav-link text-black" onclick="goToPageContact()"
-              >Contact</a
-            >
-            <a class="nav-item nav-link text-black" onclick="goToPageAboutUs()"
-              >About us</a
+              >Contact Us</a
             >
           </div>
         </div>
       </div>
+
+      <!--
+    1.	Home (Landing Page)
+2.	About Us
+3.	Services (Dropdown with subpages)
+4.	Portfolio
+5.	Testimonials
+6.	Blog (Optional for updates, tips, and news)
+7.	Contact Us
+
+    -->
 
       <!-- Navbar -->
       <nav class="navbar navbar-light bg-light thick-navbar">
@@ -77,18 +91,27 @@
               >
             </li>
             <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item mx-2">
               <a class="nav-link cursor-pointer" onclick="goToPageServices()"
                 >Services</a
               >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer" onclick="goToPageContact()"
-                >Contact</a
-              >
+              <a class="nav-link cursor-pointer">Portfolio</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
-                >About us</a
+              <a class="nav-link cursor-pointer">Testimonials</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageContact()"
+                >Contact Us</a
               >
             </li>
           </ul>
