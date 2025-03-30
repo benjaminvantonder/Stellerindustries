@@ -3,6 +3,13 @@
   padding-bottom: 1.3rem;
 }
 
+.navbar .dropdown-menu {
+  position: absolute; /* Makes sure dropdown doesn't push navbar height */
+  top: 100%; /* Positions dropdown directly below the parent */
+  left: 0; /* Aligns it properly */
+  z-index: 1050; /* Ensures it stays on top */
+}
+
 .brand-logo {
   position: absolute;
   height: 80px; /* Adjust as needed */
@@ -13,5 +20,5 @@
 }
 
 .cursor-pointer {
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
