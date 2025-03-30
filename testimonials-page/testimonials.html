@@ -37,9 +37,28 @@
             <a class="nav-item nav-link text-black" onclick="goToPageAboutUs()"
               >About Us</a
             >
-            <a class="nav-item nav-link text-black" onclick="goToPageServices()"
-              >Services</a
-            >
+            <li class="nav-item dropdown">
+              <a
+                class="nav-item nav-link dropdown-toggle text-black"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Services</a
+              >
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" onclick="goToPageServices()">Action</a>
+                <a class="dropdown-item" onclick="goToPageServices()"
+                  >Another action</a
+                >
+                <a class="dropdown-item" onclick="goToPageServices()"
+                  >Something else here</a
+                >
+              </div>
+            </li>
             <a class="nav-item nav-link text-black">Portfolio</a>
             <a class="nav-item nav-link text-black">Testimonials</a>
             <a class="nav-item nav-link text-black">Blog</a>
@@ -97,19 +116,44 @@
                 >About Us</a
               >
             </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer" onclick="goToPageServices()"
+            <li class="nav-item dropdown mx-2">
+              <a
+                class="nav-item nav-link dropdown-toggle text-black"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
                 >Services</a
+              >
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" onclick="goToPageServices()">Action</a>
+                <a class="dropdown-item" onclick="goToPageServices()"
+                  >Another action</a
+                >
+                <a class="dropdown-item" onclick="goToPageServices()"
+                  >Something else here</a
+                >
+              </div>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPagePortfolio()"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item mx-2 active">
+              <a
+                class="nav-link cursor-pointer"
+                onclick="goToPageTestimonials()"
+                >Testimonials</a
               >
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer">Portfolio</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer active">Testimonials</a>
-            </li>
-            <li class="nav-item mx-2">
-              <a class="nav-link cursor-pointer">Blog</a>
+              <a class="nav-link cursor-pointer" onclick="goToPageBlog()"
+                >Blog</a
+              >
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link cursor-pointer" onclick="goToPageContact()"
