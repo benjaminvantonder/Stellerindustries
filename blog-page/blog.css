@@ -1,0 +1,41 @@
+.thick-navbar {
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.brand-logo {
+  position: absolute;
+  height: 80px; /* Adjust as needed */
+  width: auto;
+  left: 0; /* Align it as per your design */
+  top: 50%;
+  transform: translateY(-50%); /* Centers vertically */
+}
+
+.black-background {
+  text-align: center;
+  background-color: #343a40;
+  color: rgb(232, 232, 232);
+}
+
+.white-background {
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  color: rgb(21, 21, 21);
+}
+
+.white-text-colour a {
+  color: white;
+}
+
+.white-background h4 {
+  font-weight: bold;
+}
+
+.bottom-bar {
+  padding: 1.5em;
+}

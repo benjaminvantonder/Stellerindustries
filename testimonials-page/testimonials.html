@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="utf-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta name="description" content="Steller industries" />
+      <title>Steller Industries</title>
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="testimonails.css" />
+      <link
+        rel="icon"
+        type="image/png"
+        href="../assets/steller-industries-logo.jpg"
+      />
+    </head>
+  </head>
+  <body>
+    <!--Navbar-->
+
+    <div class="pos-f-t">
+      <!--Navbar section that is openable-->
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-light p-4">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link text-black" onclick="goToPageHome()"
+              >Home</a
+            >
+            <a class="nav-item nav-link text-black" onclick="goToPageAboutUs()"
+              >About Us</a
+            >
+            <a class="nav-item nav-link text-black" onclick="goToPageServices()"
+              >Services</a
+            >
+            <a class="nav-item nav-link text-black">Portfolio</a>
+            <a class="nav-item nav-link text-black">Testimonials</a>
+            <a class="nav-item nav-link text-black">Blog</a>
+            <a class="nav-item nav-link text-black" onclick="goToPageContact()"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--
+    1.	Home (Landing Page)
+2.	About Us
+3.	Services (Dropdown with subpages)
+4.	Portfolio
+5.	Testimonials
+6.	Blog (Optional for updates, tips, and news)
+7.	Contact Us
+
+    -->
+
+      <!-- Navbar -->
+      <nav class="navbar navbar-light bg-light thick-navbar">
+        <!-- Logo / Brand -->
+        <a class="navbar-brand position-relative" href="#">
+          <img
+            src="../assets/steller-industries-logo.jpg"
+            class="brand-logo"
+            alt="Steller Industries"
+        /></a>
+
+        <!-- Mobile Toggler Button -->
+        <button
+          class="navbar-toggler d-block d-md-none ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop Nav Links (Always Visible on md and up) -->
+        <div class="d-none d-md-flex">
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageHome()"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageServices()"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer">Portfolio</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer active">Testimonials</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer">Blog</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageContact()"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!--Navbar END-->
+
+    <div class="container-fluid white-background py-5">
+      <hr class="my-4" />
+
+      <div class="text-center">
+        <h2>Steller Industries</h2>
+        <p class="mb-0">© 2025 Steller Industries. All rights reserved.</p>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="testimonials.js"></script>
+  </body>
+</html>
