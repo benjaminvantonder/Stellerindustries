@@ -69,12 +69,10 @@
         <!-- Desktop Nav Links (Always Visible on md and up) -->
         <div class="d-none d-md-flex">
           <ul class="navbar-nav flex-row">
-            <li class="nav-item active mx-2">
-              <a class="nav-link cursor-pointer" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
             <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" href="#">Home</a>
+            </li>
+            <li class="nav-item active mx-2">
               <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
                 >About Us</a
               >
@@ -103,8 +101,31 @@
       </nav>
     </div>
 
-    <div class="container-fluid black-background py-5">
-      <h2>So Why Steller and Not Stellar?</h2>
+    <div class="home-page-image d-none d-md-flex">
+      <img src="../assets/steller-industries-blue-pink2.jpg" />
+      <div class="image-text-desktop">
+        <h1>About Us:</h1>
+        <hr />
+        <h3>So Why Steller and Not Stellar?</h3>
+      </div>
+    </div>
+
+    <div class="home-page-image d-block d-md-none ml-auto">
+      <img src="../assets/steller-industries-blue-pink.jpg" />
+      <div class="image-text">
+        <div class="image-text-desktop">
+          <h1>About Us:</h1>
+          <hr />
+          <h3>So Why Steller and Not Stellar?</h3>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    
+    -->
+
+    <div class="black-background py-5 px-3">
       <p>
         At Steller Industries, our name is more than just a word—it’s a
         reflection of who we are and what we do. We chose "Steller" because it
@@ -116,6 +137,9 @@
         our commitment to delivering top-tier sound, lighting, and visual
         experiences—because in everything we do, we aim to be truly Steller!
       </p>
+    </div>
+
+    <div class="container-fluid white-background py-5 px-3">
       <p>
         Steller Industries, formerly known as Flashpoint Productions, was
         rebranded in early 2024 but has been operating since 2014. We specialize
@@ -124,6 +148,11 @@
         photography and videography, ensuring a complete event production
         experience for our clients.
       </p>
+    </div>
+
+    <div class="container-fluid white-background py-3 px-1">
+      <h3>Our Vision :</h3>
+      <hr />
       <p>
         Our vision is to become a leading service provider in the event
         production industry while growing into new avenues such as CCTV
