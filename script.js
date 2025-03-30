@@ -18,8 +18,46 @@ function goToPageAboutUs() {
   window.location.href = "./about-us-page/about-us.html";
 }
 
-function goToPageServices() {
-  window.location.href = "./services-page/services.html";
+/* 
+<a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServicesSound()"
+                  >Sound & Lighting</a
+                >
+                <a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServices()"
+                  >Photography & Videography</a
+                >
+                <a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServices()"
+                  >Installations & COnsulting</a
+                >
+                <a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServices()"
+                  >Event Support & Rentals</a
+                >
+*/
+
+function goToPageServicesSound() {
+  window.location.href = "./services-page/services-sound-and-lighting.html"; //services-page\services-sound-and-lighting.html
+}
+
+function goToPageServicesPhotography() {
+  window.location.href =
+    "./services-page/services-photography-and-videography.html";
+}
+
+function goToPageServicesInstallations() {
+  window.location.href =
+    "./services-page/services-installations-and-consulting.html";
+}
+
+function goToPageServicesSupport() {
+  window.location.href =
+    "./services-page/services-event-support-and-rentals.html";
 }
 
 function goToPagePortfolio() {
