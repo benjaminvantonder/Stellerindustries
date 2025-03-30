@@ -26,7 +26,9 @@
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-light p-4">
           <div class="navbar-nav">
-            <a class="nav-item nav-link text-black">Home</a>
+            <a class="nav-item nav-link text-black" onclick="goToPageHome()"
+              >Home</a
+            >
             <a class="nav-item nav-link text-black" onclick="goToPageAboutUs()"
               >About Us</a
             >
@@ -43,18 +45,35 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" onclick="goToPageServices()">Action</a>
-                <a class="dropdown-item" onclick="goToPageServices()"
-                  >Another action</a
+                <a class="dropdown-item" onclick="goToPageServicesSound()"
+                  >Sound & Lighting</a
                 >
-                <a class="dropdown-item" onclick="goToPageServices()"
-                  >Something else here</a
+                <a class="dropdown-item" onclick="goToPageServicesPhotography()"
+                  >Photography & Videography</a
+                >
+                <a
+                  class="dropdown-item"
+                  onclick="goToPageServicesInstallations()"
+                  >Installations & Consulting</a
+                >
+                <a class="dropdown-item" onclick="goToPageServicesSupport()"
+                  >Event Support & Rentals</a
                 >
               </div>
             </li>
-            <a class="nav-item nav-link text-black">Portfolio</a>
-            <a class="nav-item nav-link text-black">Testimonials</a>
-            <a class="nav-item nav-link text-black">Blog</a>
+            <a
+              class="nav-item nav-link text-black"
+              onclick="goToPagePortfolio()"
+              >Portfolio</a
+            >
+            <a
+              class="nav-item nav-link text-black"
+              onclick="goToPageTestimonials()"
+              >Testimonials</a
+            >
+            <a class="nav-item nav-link text-black" onclick="goToPageBlog()"
+              >Blog</a
+            >
             <a class="nav-item nav-link text-black" onclick="goToPageContact()"
               >Contact Us</a
             >
@@ -65,11 +84,12 @@
       <!-- Navbar -->
       <nav class="navbar navbar-light bg-light thick-navbar">
         <!-- Logo / Brand -->
-        <a class="navbar-brand position-relative" href="#">
+        <a class="navbar-brand position-relative">
           <img
             src="../assets/steller-industries-logo.jpg"
             class="brand-logo"
             alt=""
+            onclick="goToPageHome()"
         /></a>
 
         <!-- Mobile Toggler Button -->
@@ -88,12 +108,12 @@
         <!-- Desktop Nav Links (Always Visible on md and up) -->
         <div class="d-none d-md-flex">
           <ul class="navbar-nav flex-row">
-            <li class="nav-item mx-2">
+            <li class="nav-item active mx-2">
               <a class="nav-link cursor-pointer" onclick="goToPageHome()"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item mx-2 active">
+            <li class="nav-item mx-2">
               <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
                 >About Us</a
               >
@@ -111,14 +131,25 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" onclick="goToPageServices()"
-                  >Event Sound & Lighting</a
+                <a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServicesSound()"
+                  >Sound & Lighting</a
                 >
-                <a class="dropdown-item" onclick="goToPageServices()"
-                  >Another action</a
+                <a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServicesPhotography()"
+                  >Photography & Videography</a
                 >
-                <a class="dropdown-item" onclick="goToPageServices()"
-                  >Something else here</a
+                <a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServicesInstallations()"
+                  >Installations & Consulting</a
+                >
+                <a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServicesSupport()"
+                  >Event Support & Rentals</a
                 >
               </div>
             </li>
@@ -184,7 +215,7 @@
     </div>
 
     <div class="container-fluid white-background pt-5 px-3">
-      <h3>Your Experience :</h3>
+      <h3>Your Experience Matters:</h3>
       <hr class="custom-hr" />
       <p>
         Steller Industries, formerly known as Flashpoint Productions, was

@@ -112,3 +112,7 @@
 .bottom-bar {
   padding: 1.5em;
 }
+
+ul {
+  list-style-position: inside;
+}
