@@ -93,7 +93,7 @@ body {
   margin: 10px auto;
 }
 
-hr {
+.custom-hr {
   width: 50%;
   border: 1px solid #343a40;
   margin: 10px auto;
