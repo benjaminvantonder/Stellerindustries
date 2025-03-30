@@ -11,7 +11,7 @@
 */
 
 function goToPageHome() {
-  window.location.href = "#";
+  window.location.href = "index.html";
 }
 
 function goToPageAboutUs() {
@@ -23,15 +23,15 @@ function goToPageServices() {
 }
 
 function goToPagePortfolio() {
-  window.location.href = "./services-page/services.html";
+  window.location.href = "./portfolio-page/portfolio.html";
 }
 
 function goToPageTestimonials() {
-  window.location.href = "./services-page/services.html";
+  window.location.href = "./testimonials-page/testimonials.html";
 }
 
 function goToPageBlog() {
-  window.location.href = "./services-page/services.html";
+  window.location.href = "./blog-page/blog.html";
 }
 
 function goToPageContact() {
