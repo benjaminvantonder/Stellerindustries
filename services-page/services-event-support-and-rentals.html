@@ -45,18 +45,32 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" onclick="goToPageServices()">Action</a>
-                <a class="dropdown-item" onclick="goToPageServices()"
-                  >Another action</a
+                <a class="dropdown-item" onclick="goToPageServicesSound()"
+                  >Sound & Lighting</a
                 >
-                <a class="dropdown-item" onclick="goToPageServices()"
-                  >Something else here</a
+                <a class="dropdown-item" onclick="goToPageServicesPhotography()"
+                  >Photography & Videography</a
+                >
+                <a
+                  class="dropdown-item"
+                  onclick="goToPageServicesInstallations()"
+                  >Installations & Consulting</a
                 >
               </div>
             </li>
-            <a class="nav-item nav-link text-black">Portfolio</a>
-            <a class="nav-item nav-link text-black">Testimonials</a>
-            <a class="nav-item nav-link text-black">Blog</a>
+            <a
+              class="nav-item nav-link text-black"
+              onclick="goToPagePortfolio()"
+              >Portfolio</a
+            >
+            <a
+              class="nav-item nav-link text-black"
+              onclick="goToPageTestimonials()"
+              >Testimonials</a
+            >
+            <a class="nav-item nav-link text-black" onclick="goToPageBlog()"
+              >Blog</a
+            >
             <a class="nav-item nav-link text-black" onclick="goToPageContact()"
               >Contact Us</a
             >
@@ -91,76 +105,71 @@
 
         <!-- Desktop Nav Links (Always Visible on md and up) -->
         <div class="d-none d-md-flex">
-            <ul class="navbar-nav flex-row">
-              <li class="nav-item active mx-2">
-                <a class="nav-link cursor-pointer" onclick="goToPageHome()"
-                  >Home <span class="sr-only">(current)</span></a
-                >
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-item dropdown mx-2">
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageHome()"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item dropdown mx-2 active">
+              <a
+                class="nav-item nav-link dropdown-toggle text-black"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Services</a
+              >
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
                 <a
-                  class="nav-item nav-link dropdown-toggle text-black"
-                  id="navbarDropdownMenuLink"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                  >Services</a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServicesSound()"
+                  >Sound & Lighting</a
                 >
-                <div
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
-                  <a
-                    class="dropdown-item cursor-pointer"
-                    onclick="goToPageServicesSound()"
-                    >Sound & Lighting</a
-                  >
-                  <a
-                    class="dropdown-item cursor-pointer"
-                    onclick="goToPageServicesPhotography()"
-                    >Photography & Videography</a
-                  >
-                  <a
-                    class="dropdown-item cursor-pointer"
-                    onclick="goToPageServicesInstallations()"
-                    >Installations & Consulting</a
-                  >
-                  <a
-                    class="dropdown-item cursor-pointer"
-                    onclick="goToPageServicesSupport()"
-                    >Event Support & Rentals</a
-                  >
-                </div>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link cursor-pointer" onclick="goToPagePortfolio()"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item mx-2">
                 <a
-                  class="nav-link cursor-pointer"
-                  onclick="goToPageTestimonials()"
-                  >Testimonials</a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServicesPhotography()"
+                  >Photography & Videography</a
                 >
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link cursor-pointer" onclick="goToPageBlog()"
-                  >Blog</a
+                <a
+                  class="dropdown-item cursor-pointer"
+                  onclick="goToPageServicesInstallations()"
+                  >Installations & Consulting</a
                 >
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link cursor-pointer" onclick="goToPageContact()"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPagePortfolio()"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a
+                class="nav-link cursor-pointer"
+                onclick="goToPageTestimonials()"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageBlog()"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link cursor-pointer" onclick="goToPageContact()"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
 

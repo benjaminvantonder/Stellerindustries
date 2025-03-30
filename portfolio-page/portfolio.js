@@ -30,7 +30,7 @@ function goToPagePortfolio() {
 }
 
 function goToPageTestimonials() {
-  window.location.href = "#";
+  window.location.href = "../testimonials-page/testimonials.html";
 }
 
 function goToPageBlog() {

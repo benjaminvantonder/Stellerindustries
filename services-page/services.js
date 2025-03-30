@@ -40,3 +40,7 @@ function goToPageBlog() {
 function goToPageContact() {
   window.location.href = "../contact-page/contact.html";
 }
+
+function noChange() {
+  window.location.href = "#";
+}
