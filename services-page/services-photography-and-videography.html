@@ -13,7 +13,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="about-us.css" />
+    <link rel="stylesheet" href="services.css" />
     <link
       rel="icon"
       type="image/png"
@@ -26,7 +26,9 @@
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-light p-4">
           <div class="navbar-nav">
-            <a class="nav-item nav-link text-black">Home</a>
+            <a class="nav-item nav-link text-black" onclick="goToPageHome()"
+              >Home</a
+            >
             <a class="nav-item nav-link text-black" onclick="goToPageAboutUs()"
               >About Us</a
             >
@@ -69,8 +71,10 @@
           <img
             src="../assets/steller-industries-logo.jpg"
             class="brand-logo"
-            alt=""
+            alt="Steller Industries"
         /></a>
+        <!--Steller
+        Industries-->
 
         <!-- Mobile Toggler Button -->
         <button
@@ -93,12 +97,12 @@
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item mx-2 active">
+            <li class="nav-item mx-2">
               <a class="nav-link cursor-pointer" onclick="goToPageAboutUs()"
                 >About Us</a
               >
             </li>
-            <li class="nav-item dropdown mx-2">
+            <li class="nav-item dropdown mx-2 active">
               <a
                 class="nav-item nav-link dropdown-toggle text-black"
                 id="navbarDropdownMenuLink"
@@ -111,9 +115,7 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" onclick="goToPageServices()"
-                  >Event Sound & Lighting</a
-                >
+                <a class="dropdown-item" onclick="goToPageServices()">Action</a>
                 <a class="dropdown-item" onclick="goToPageServices()"
                   >Another action</a
                 >
@@ -149,65 +151,10 @@
       </nav>
     </div>
 
-    <div class="home-page-image d-none d-md-flex">
-      <img src="../assets/steller-industries-blue-pink2.jpg" />
-      <div class="image-text-desktop">
-        <h1>About Us:</h1>
-        <hr />
-        <h3>So Why Steller and Not Stellar?</h3>
-      </div>
-    </div>
-
-    <div class="home-page-image d-block d-md-none ml-auto">
-      <img src="../assets/steller-industries-blue-pink.jpg" />
-      <div class="image-text">
-        <div class="image-text-desktop">
-          <h1>About Us:</h1>
-          <hr />
-          <h3>So Why Steller and Not Stellar?</h3>
-        </div>
-      </div>
-    </div>
-
-    <div class="black-background py-5 px-3">
-      <p>
-        At Steller Industries, our name is more than just a word—it’s a
-        reflection of who we are and what we do. We chose "Steller" because it
-        sounds like "stellar," representing excellence, but with a unique twist.
-        The "elle" in the middle is a deliberate design choice, symbolizing both
-        aspects of our business: sound (since it sounds like "stellar") and
-        visual creativity (as the spelling is more visually distinctive, just
-        like our photography and videography work). It’s a name that embodies
-        our commitment to delivering top-tier sound, lighting, and visual
-        experiences—because in everything we do, we aim to be truly Steller!
-      </p>
-    </div>
-
-    <div class="container-fluid white-background pt-5 px-3">
-      <h3>Your Experience :</h3>
-      <hr class="custom-hr" />
-      <p>
-        Steller Industries, formerly known as Flashpoint Productions, was
-        rebranded in early 2024 but has been operating since 2014. We specialize
-        in providing high-quality sound and lighting services for a wide range
-        of events. Over the years, we have expanded our services to include
-        photography and videography, ensuring a complete event production
-        experience for our clients.
-      </p>
-      <hr class="mb-0" />
-    </div>
-
-    <div class="container-fluid white-background py-5 px-3 mt-0">
-      <h3>Our Vision :</h3>
-      <hr class="custom-hr" />
-      <p>
-        Our vision is to become a leading service provider in the event
-        production industry while growing into new avenues such as CCTV
-        installations, security video systems, sound and lighting installations,
-        computer building, and network solutions.
-      </p>
+    <div class="container-fluid white-background py-5">
       <hr class="my-4" />
-      <div class="text-center py-3">
+
+      <div class="text-center">
         <h2>Steller Industries</h2>
         <p class="mb-0">© 2025 Steller Industries. All rights reserved.</p>
       </div>
@@ -228,6 +175,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="about-us.js"></script>
+    <script src="services.js"></script>
   </body>
 </html>
