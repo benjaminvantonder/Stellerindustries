@@ -23,6 +23,97 @@
   cursor: pointer;
 }
 
+/**/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Ensure no unwanted padding/margins on the image */
+.home-page-image {
+  position: relative;
+  width: 100vw; /* Full width of viewport */
+  overflow: hidden;
+}
+
+.home-page-image img {
+  width: 100vw; /* Ensure no unwanted margins */
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* White overlay effect */
+.home-page-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.441); /* White fog effect */
+  pointer-events: none;
+  z-index: 2; /* Ensures it overlays the image but not the text */
+}
+
+.image-text,
+.image-text-desktop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #343a40;
+  z-index: 3;
+  width: 90%; /* Prevents text from overflowing */
+  max-width: 800px;
+}
+
+/* Title Styling */
+.image-text h1,
+.image-text-desktop h1 {
+  font-size: clamp(24px, 5vw, 50px); /* Scales with screen size */
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+/* Subtitle Styling */
+.image-text h3,
+.image-text-desktop h3 {
+  font-size: clamp(18px, 3vw, 32px);
+  margin: 10px 0 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+/* Horizontal Line Styling */
+.image-text hr,
+.image-text-desktop hr {
+  width: 50%;
+  border: 1px solid #343a40;
+  margin: 10px auto;
+}
+
+.custom-hr {
+  width: 50%;
+  border: 1px solid #343a40;
+  margin: 10px auto;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .image-text {
+    width: 100%; /* Full width on smaller screens */
+    padding: 0 10px;
+  }
+}
+
 .black-background {
   text-align: center;
   background-color: #343a40;
