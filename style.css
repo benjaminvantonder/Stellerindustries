@@ -3,6 +3,10 @@
   padding-bottom: 1.3rem;
 }
 
+.fade-in {
+  transition: opacity 0.6s ease-in-out;
+}
+
 .navbar .dropdown-menu {
   position: absolute; /* Makes sure dropdown doesn't push navbar height */
   top: 100%; /* Positions dropdown directly below the parent */

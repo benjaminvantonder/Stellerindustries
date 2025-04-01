@@ -18,29 +18,6 @@ function goToPageAboutUs() {
   window.location.href = "./about-us-page/about-us.html";
 }
 
-/* 
-<a
-                  class="dropdown-item cursor-pointer"
-                  onclick="goToPageServicesSound()"
-                  >Sound & Lighting</a
-                >
-                <a
-                  class="dropdown-item cursor-pointer"
-                  onclick="goToPageServices()"
-                  >Photography & Videography</a
-                >
-                <a
-                  class="dropdown-item cursor-pointer"
-                  onclick="goToPageServices()"
-                  >Installations & COnsulting</a
-                >
-                <a
-                  class="dropdown-item cursor-pointer"
-                  onclick="goToPageServices()"
-                  >Event Support & Rentals</a
-                >
-*/
-
 function goToPageServicesSound() {
   window.location.href = "./services-page/services-sound-and-lighting.html"; //services-page\services-sound-and-lighting.html
 }
@@ -75,3 +52,23 @@ function goToPageBlog() {
 function goToPageContact() {
   window.location.href = "./contact-page/contact.html";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeElements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log("Element is visible!");
+          entry.target.classList.remove("opacity-0"); // Remove Bootstrap's hidden class
+          entry.target.classList.add("opacity-100"); // Make it visible
+          observer.unobserve(entry.target); // Stop observing once it's visible
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  fadeElements.forEach((el) => observer.observe(el));
+});
