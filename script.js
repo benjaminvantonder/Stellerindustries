@@ -10,6 +10,25 @@
 
 */
 
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeElements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("opacity-0"); // Remove Bootstrap's hidden class
+          entry.target.classList.add("fade-in-visible"); // Add class for visibility
+          observer.unobserve(entry.target); // Stop observing once it's visible
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  fadeElements.forEach((el) => observer.observe(el));
+});
+
 function goToPageHome() {
   window.location.href = "index.html";
 }
@@ -52,23 +71,3 @@ function goToPageBlog() {
 function goToPageContact() {
   window.location.href = "./contact-page/contact.html";
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  const fadeElements = document.querySelectorAll(".fade-in");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          console.log("Element is visible!");
-          entry.target.classList.remove("opacity-0"); // Remove Bootstrap's hidden class
-          entry.target.classList.add("opacity-100"); // Make it visible
-          observer.unobserve(entry.target); // Stop observing once it's visible
-        }
-      });
-    },
-    { threshold: 0.1 }
-  );
-
-  fadeElements.forEach((el) => observer.observe(el));
-});
