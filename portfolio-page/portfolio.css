@@ -3,6 +3,11 @@
   padding-bottom: 1.3rem;
 }
 
+#Steller-industries-nasa-text {
+  font-family: "Nasa";
+  font-style: italic;
+}
+
 .fade-in {
   opacity: 0;
   transition: opacity 1s ease-in-out;
