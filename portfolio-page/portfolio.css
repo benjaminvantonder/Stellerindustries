@@ -60,3 +60,8 @@
 .bottom-bar {
   padding: 1.5em;
 }
+
+hr {
+  color: white;
+  background-color: white;
+}
